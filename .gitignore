@@ -1,0 +1,61 @@
+# Environment files
+.env
+.env.local
+
+# Google Earth Engine credentials
+gee-credentials.json
+*.pem
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+.venv
+backend-python/venv/
+*.egg-info/
+.pytest_cache/
+.coverage
+
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.npm
+.yarn/
+
+# Next.js
+frontend/.next/
+frontend/out/
+frontend/build/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Database
+*.sql.backup
+postgres_data/
+
+# Model files (large binary files)
+backend-python/models/weights/*.h5
+backend-python/models/weights/*.pt
+backend-python/models/weights/*.pkl
+
+# Logs
+*.log
+logs/
+
+backend-python/*.json
+backend-python/deforestation-detector-485714-f80fa12e8ce2.json

@@ -1,0 +1,38 @@
+# Google Earth Engine
+earthengine-api>=0.1.380
+
+# Geospatial Libraries
+geopandas>=0.14.0
+shapely>=2.0.0
+rasterio>=1.3.0
+pyproj>=3.6.0
+
+# Database
+psycopg2-binary>=2.9.9
+sqlalchemy>=2.0.0
+geoalchemy2>=0.14.0
+
+# Machine Learning
+numpy>=1.24.0
+pandas>=2.1.0
+scikit-learn>=1.3.0
+tensorflow>=2.14.0  # or pytorch if preferred
+joblib>=1.3.0
+
+# HTTP Requests (for IBGE API)
+requests>=2.31.0
+
+# Scheduling
+schedule>=1.2.0
+python-dotenv>=1.0.0
+
+# Notification Services
+twilio>=8.10.0
+sendgrid>=6.11.0
+
+# Logging and Monitoring
+loguru>=0.7.2
+
+# Testing
+pytest>=7.4.0
+pytest-cov>=4.1.0

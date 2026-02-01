@@ -1,0 +1,32 @@
+{
+  "name": "deforestation-monitor",
+  "version": "1.0.0",
+  "description": "Near Real-Time Deforestation Monitoring System using Sentinel-1 SAR",
+  "private": true,
+  "workspaces": [
+    "frontend",
+    "backend-api"
+  ],
+  "scripts": {
+    "install:all": "npm install && cd frontend && npm install && cd ../backend-api && npm install",
+    "dev:api": "cd backend-api && npm run dev",
+    "dev:frontend": "cd frontend && npm run dev",
+    "dev": "concurrently \"npm run dev:api\" \"npm run dev:frontend\"",
+    "start:pipeline": "cd backend-python && python pipeline.py",
+    "start:scheduler": "cd backend-python && python scheduler.py",
+    "db:setup": "psql -U postgres -f database/schema.sql && psql -U postgres -d deforestation_db -f database/seed.sql"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "keywords": [
+    "deforestation",
+    "sentinel-1",
+    "SAR",
+    "remote-sensing",
+    "earth-engine",
+    "GIS"
+  ],
+  "author": "",
+  "license": "MIT"
+}
